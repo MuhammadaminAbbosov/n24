@@ -1,4 +1,5 @@
 @import "./news1";
+@import "./news2";
 
 .main {
     padding: 40px 120px 100px;
@@ -14,11 +15,12 @@
         align-items: center;
         justify-content: space-between;
         padding: 24px 71px 24px 29px;
-        background-image: url("../../assets//images/Group\ 35\ 1.png");
+        background-image: url("../../assets//images/seck__back.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         border-radius: 10px;
+        margin-bottom: 60px;
 
         .notification__text {
             font-weight: 500;
@@ -39,4 +41,6 @@
             cursor: pointer;
         }
     }
+
+
 }

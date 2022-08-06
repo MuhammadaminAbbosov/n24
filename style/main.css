@@ -156,6 +156,106 @@
   color: #5E5F61;
 }
 
+.main__news-2 .news-2__title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.main__news-2 .news-2__box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.main__news-2 .news-2__box .news-2__left .news-2__main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main__news-2 .news-2__box .news-2__left .news-2__main .news-2__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 17px;
+  background: #F6F6F6;
+  border-radius: 15px;
+}
+.main__news-2 .news-2__box .news-2__left .news-2__main .news-2__item .news-2__title {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.main__news-2 .news-2__box .news-2__left .news-2__main .news-2__item .news-2__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4A4B4C;
+  margin-bottom: 17px;
+}
+.main__news-2 .news-2__box .news-2__left .news-2__main .news-2__item .news-2__author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main__news-2 .news-2__box .news-2__left .news-2__main .news-2__item .news-2__author .author__name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #5E5F61;
+}
+.main__news-2 .news-2__box .news-2__left .news-2__btn {
+  display: block;
+  margin-top: 17px;
+  width: 100%;
+  background: #EAEAEA;
+  border-radius: 10px;
+  border: none;
+  padding: 17px 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.main__news-2 .news-2__box .news-2__right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main__news-2 .news-2__box .news-2__right .news-3 {
+  background: #F6F6F6;
+  border-radius: 15px;
+  padding: 20px 17px;
+}
+.main__news-2 .news-2__box .news-2__right .news-3 .news-3__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 5px;
+  display: block;
+}
+.main__news-2 .news-2__box .news-2__right .news-3 .news-3__item .news-3__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main__news-2 .news-2__box .news-2__right .news-3 .news-3__item .author__name {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #5E5F61;
+}
+.main__news-2 .news-2__box .news-2__right .news-3 .news-3__item:not(:last-child) {
+  padding: 20px 0;
+  border-bottom: 1px solid #D2D2D2;
+}
+.main__news-2 .news-2__box .news-2__right .news-3 .news-3__item:last-child {
+  padding-top: 20px;
+}
+
 .main {
   padding: 40px 120px 100px;
 }
@@ -169,11 +269,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 24px 71px 24px 29px;
-  background-image: url("../../assets//images/Group 35 1.png");
+  background-image: url("../../assets//images/seck__back.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 10px;
+  margin-bottom: 60px;
 }
 .main .main__notification .notification__text {
   font-weight: 500;
@@ -190,6 +291,67 @@
   line-height: 24px;
   color: #fff;
   cursor: pointer;
+}
+
+.footer {
+  background: #7297EF;
+  padding: 40px 221px;
+}
+.footer .footer__logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  display: block;
+}
+.footer .footer__main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #CECECE;
+}
+.footer .footer__main .footer__copyright {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #FFFFFF;
+  width: 230px;
+}
+.footer .footer__main .footer__links {
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
+}
+.footer .footer__main .footer__links .footer__link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer .footer__main .footer__links .footer__link .link__item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.footer .footer__socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__socials .footer__social-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  width: 160px;
+}
+.footer .footer__socials .footer__social {
+  display: flex;
+  gap: 25px;
 }
 
 * {
