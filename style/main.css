@@ -99,6 +99,99 @@
   border-radius: 10px;
 }
 
+.nav {
+  margin: 30px 120px 0;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #D1D1D1;
+}
+.nav .nav__item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #7F7F7F;
+}
+
+.main__news-1 {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 393px);
+  gap: 10px;
+}
+.main__news-1 .news-1__item {
+  padding: 20px 17px;
+  background: #F6F6F6;
+  border-radius: 15px;
+  width: 393px;
+}
+.main__news-1 .news-1__item .news-1__title {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.main__news-1 .news-1__item .news-1__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4A4B4C;
+  margin-bottom: 15px;
+}
+.main__news-1 .news-1__item .news-1__author {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main__news-1 .news-1__item .news-1__author .author__name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #5E5F61;
+}
+
+.main {
+  padding: 40px 120px 100px;
+}
+.main .main__advertising {
+  display: flex;
+  justify-content: center;
+}
+.main .main__notification {
+  margin: 0 90px 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 71px 24px 29px;
+  background-image: url("../../assets//images/Group 35 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.main .main__notification .notification__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+.main .main__notification .notification__btn {
+  border: none;
+  background: #F78B3B;
+  border-radius: 10px;
+  padding: 13px 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,42 @@
+@import "./news1";
+
+.main {
+    padding: 40px 120px 100px;
+
+    .main__advertising {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__notification {
+        margin: 0 90px 0 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 71px 24px 29px;
+        background-image: url("../../assets//images/Group\ 35\ 1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+
+        .notification__text {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        .notification__btn  {
+            border: none;
+            background: #F78B3B;
+            border-radius: 10px;
+            padding: 13px 30px;
+
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
