@@ -10,23 +10,35 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
-            <b class="logo__text">NAMANGANLIKLAR 24</b>
-        </div>
-
-        <div class="header__exchange-rates">
-            <div class="header__dollar">
-                <b>$</b>
-                <p>10137.2</p>
+        <div class="header__left">
+            <div class="header__logo">
+                <b class="logo__text">NAMANGANLIKLAR 24</b>
             </div>
-            <div class="header__rubl">
-                <b>P</b>
-                <p>138.26</p>
-            </div>
-        </div>
-
-        <div class="header__search">
             
+            <div class="header__exchange-rates">
+                <div class="header__rate">
+                    <b>$</b>
+                    <p>10137.2</p>
+                </div>
+                <div class="header__rate">
+                    <b>P</b>
+                    <p>138.26</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__right">
+            <div class="header__search">
+                <img src="./assets/icons/search.svg" alt="" class="search__icon">
+                <input type="text" placeholder="Поиск" class="search__input">
+            </div>
+            
+            <div class="header__languages">
+                <div class="header__language active">УЗ</div>
+                <div class="header__language">РУ</div>
+            </div>
+            
+            <a href="#" class="header_sign-in">Войти</a>
         </div>
     </header>
 </body>
