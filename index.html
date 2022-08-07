@@ -10,8 +10,10 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/icons/logo.svg" type="image/x-icon">
 
+    <!-- JS -->
     <script src="./js/data.js" defer></script>
     <script src="./js/index.js" defer></script>
+    <script src="./js/event.js" defer></script>
     <!-- title -->
     <title>Namanganliklar-24</title>
 </head>
@@ -45,11 +47,49 @@
                 <div class="header__language">РУ</div>
             </div>
             
-            <a href="#" class="header_sign-in">Войти</a>
+            <a href="#" class="header__sign-in">Войти</a>
+        </div>
+
+        <div class="header__burger">
+            <div class="burger__item"></div>
+            <div class="burger__item"></div>
+            <div class="burger__item"></div>
+        </div>
+
+        <div class="header__close-btn none">
+            <img src="./assets/icons/close.svg" alt="" class="close-btn__icon">
         </div>
     </header>
     <nav class="nav" id="nav"></nav>
 
+    <div class="overlay">
+        <div class="menu">
+            <div class="menu__exchange-rates">
+                <div class="menu__rate">
+                    <b>$</b>
+                    <p>10137.2</p>
+                </div>
+                <div class="menu__rate">
+                    <b>P</b>
+                    <p>138.26</p>
+                </div>
+            </div>
+            
+            <div class="menu__search">
+                <img src="./assets/icons/search.svg" alt="" class="search__icon">
+                <input type="text" placeholder="Поиск" class="search__input">
+            </div>
+
+            <div class="menu__languages">
+                <div class="menu__language active">УЗ</div>
+                <div class="menu__language">РУ</div>
+            </div>
+
+            <div class="menu__nav" id="menu__nav"></div>
+
+            <a href="#" class="menu__sign-in">Войти</a>
+        </div>
+    </div>
     <main class="main">
         <div class="main__advertising">
             <img src="./assets/images/optimize.png" alt="advertising" class="advertising__img">
@@ -78,7 +118,7 @@
                         <b class="news-3__title">Главное</b>
 
                     </div>
-                    <img src="./assets/images/advertising.png" alt="advertising">
+                    <img src="./assets/images/advertising.png" alt="advertising" class="advertising__2">
                 </div>
             </div>
         </div>

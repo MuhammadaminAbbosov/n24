@@ -3,12 +3,30 @@
 
 .main {
     padding: 40px 120px 100px;
+    
+    @media (max-width: 1024px) {
+        padding: 40px 70px 80px;
+    }
 
+    @media (max-width: 768px) {
+        padding: 40px 50px 80px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 20px 20px 80px;
+    }
+        
     .main__advertising {
         display: flex;
         justify-content: center;
+        .advertising__img {
+            @media (max-width: 1240px) {
+                width: 100%;
+            }
+        }
     }
 
+    
     .main__notification {
         margin: 0 90px 0 60px;
         display: flex;
@@ -22,10 +40,47 @@
         border-radius: 10px;
         margin-bottom: 60px;
 
+        @media (max-width: 1024px) {
+            padding: 20px 60px 24px 29px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 20px 50px 24px 29px;
+        }
+
+        @media (max-width: 480px) {
+            padding: 20px 20px 24px 29px;
+        }
+
+        @media (max-width: 375px) {
+            padding: 5px 10px 10px 10px;    
+        }
+
         .notification__text {
             font-weight: 500;
             font-size: 20px;
             line-height: 26px;
+
+            @media (max-width: 1024px) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            @media (max-width: 375px) {
+                font-size: 10px;
+                line-height: 14px;
+                text-align: center;
+            }
         }
 
         .notification__btn  {
@@ -39,6 +94,31 @@
             line-height: 24px;
             color: #fff;
             cursor: pointer;
+
+            @media (max-width: 1024px) {
+                font-size: 16px;
+                line-height: 24px;
+
+                padding: 10px 20px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+                line-height: 20px;
+                padding: 10px 15px;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 12px;
+                line-height: 16px;
+                padding: 10px 10px;
+            }
+
+            @media (max-width: 375px) {
+                font-size: 10px;
+                line-height: 14px;
+                padding: 5px 10px;
+            }
         }
     }
 

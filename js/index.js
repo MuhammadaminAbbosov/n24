@@ -2,6 +2,7 @@ let nav = document.querySelector("#nav")
 let mainNews1 = document.querySelector(".main__news-1")
 let mainNews2 = document.querySelector(".news-2__main")
 let mainNews3 = document.querySelector(".news-3")
+let menuNav = document.querySelector(".menu__nav")
 
 nav.className = "nav"
 navItems.forEach(item => {
@@ -11,6 +12,7 @@ navItems.forEach(item => {
     link.className = "nav__item"
 
     nav.appendChild(link)
+    menuNav.appendChild(link)
 })
 
 
@@ -21,7 +23,7 @@ news1.forEach(item => {
     div.innerHTML = `
         <b class="news-1__title">${item.title}</b>
         <p class="news-1__text">${item.content}</p>
-        <img src=${item.image} alt="news-${item.id}" />
+        <img src=${item.image} alt="news-${item.id}" class="news-1__img" />
 
         <div class="news-1__author">
             <img src=${item.icon} alt=""  class="author__icon"/>
